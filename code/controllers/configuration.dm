@@ -717,12 +717,16 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 		switch (name)
 			if ("address")
 				sqladdress = value
+				world.log << "DB Address: " + sqladdress
 			if ("port")
 				sqlport = value
+				world.log << "DB Port: " + sqlport
 			if ("database")
 				sqldb = value
+				world.log << "DB DB: " + sqldb
 			if ("login")
 				sqllogin = value
+				world.log << "DB login: " + sqllogin
 			if ("password")
 				sqlpass = value
 			else
